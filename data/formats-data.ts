@@ -6294,4 +6294,40 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	navaran: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	greaternavaran: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	wraithknight: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	druid: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	masterillusionist: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	whisperer: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	cadence: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	shinobi: {
+		isNonstandard: null,
+		tier: "OU",
+	},
+	deepknight: {
+		isNonstandard: null,
+		tier: "OU",
+	},
 };
