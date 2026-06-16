@@ -21001,7 +21001,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 10000,
 		name: "Oni",
 		types: ["Fighting"],
-		baseStats: { hp: 95, atk: 120, def: 90, spa: 70, spd: 75, spe: 80 },
+		baseStats: { hp: 95, atk: 120, def: 90, spa: 65, spd: 75, spe: 85 },
 		tags: ["Ultra"],
 		abilities: { 0: "Iron Fist"},
 		weightkg: 97, // placeholder
@@ -21180,6 +21180,26 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		tags: ["Ultra"],
 		abilities: { 0: "Intimidate", 1:"Sticky Hold"},
 		weightkg: 291, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+	dragonslayer: {
+		num: 10019,
+		name: "Dragon Slayer",
+		types: ["Dragon","Steel"],
+		baseStats: { hp: 100, atk: 119, def: 86, spa: 70, spd: 79, spe: 91},
+		tags: ["Ultra"],
+		abilities: { 0: "Full Metal Body"},
+		weightkg: 156, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+	vanguard: {
+		num: 10020,
+		name: "Vanguard",
+		types: ["Fire","Fighting"],
+		baseStats: { hp: 85, atk: 125, def: 76, spa: 80, spd: 99, spe: 80},
+		tags: ["Ultra"],
+		abilities: { 0: "Blaze", 1:"Flame Body"},
+		weightkg: 187, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 
