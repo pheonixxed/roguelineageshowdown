@@ -44,46 +44,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
-		oni: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	dsage: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	necromancer: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	sigilknight: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	sigilknightice: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	sigilknightfire: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	sigilknightthunder: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	sigilknightwhiteflame: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	ronin: {
-		isNonstandard: null,
-		tier: "OU",
-	},
-	abysswalker: {
-		isNonstandard: null,
-		tier: "RU",
-	},
 	squirtle: {
 		tier: "LC",
 	},
@@ -6294,40 +6254,81 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	// Rogue Lineage Formats
+	oni: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	dsage: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	necromancer: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	sigilknight: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	sigilknightice: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	sigilknightfire: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	sigilknightthunder: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	sigilknightwhiteflame: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	ronin: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	abysswalker: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
 	navaran: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	greaternavaran: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	wraithknight: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	druid: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	masterillusionist: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	whisperer: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	cadence: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	shinobi: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 	deepknight: {
 		isNonstandard: null,
-		tier: "OU",
+		tier: "Ultra",
 	},
 };

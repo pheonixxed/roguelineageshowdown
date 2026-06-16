@@ -21073,7 +21073,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sigilknightthunder: {
 		num: 10007,
 		name: "Sigil Knight-Thunder",
-		types: ["Steel","Thunder"],
+		types: ["Steel","Electric"],
 		baseStats: { hp: 100, atk: 110, def: 80, spa: 85, spd: 80, spe: 80 },
 		abilities: { 0: "Sharpness"},
 		requiredItem: "Thunder Charge",
