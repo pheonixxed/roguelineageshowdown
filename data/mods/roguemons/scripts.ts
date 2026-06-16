@@ -1,5 +1,5 @@
 export const Scripts: ModdedBattleScriptsData = {
-	gen: 9,
+	gen: 10,
 	inherit: 'gen9',
 	init() {
 /* 		let navlearntable: [];
