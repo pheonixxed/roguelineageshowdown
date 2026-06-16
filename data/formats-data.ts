@@ -6259,7 +6259,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: null,
 		tier: "Ultra",
 	},
-	dsage: {
+	dragonsage: {
 		isNonstandard: null,
 		tier: "Ultra",
 	},
