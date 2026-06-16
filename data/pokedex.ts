@@ -21106,7 +21106,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 10011,
 		name: "Wraith Knight",
 		types: ["Steel","Dark"],
-		baseStats: { hp: 125, atk: 102, def: 105, spa: 93, spd: 60, spe: 50 },
+		baseStats: { hp: 125, atk: 103, def: 105, spa: 92, spd: 60, spe: 50 },
 		tags: ["Ultra"],
 		abilities: { 0: "Sword of Ruin", 1: "Intimidate"},
 		weightkg: 325, // placeholder
