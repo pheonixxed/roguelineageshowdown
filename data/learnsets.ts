@@ -100748,7 +100748,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wideguard: ["9L46"],
 			sacredsword: ["9L46"],
 			substitue: ["9L46"],
-			trickroom: ["5M"],
+			trickroom: ["9L46"],
 			doubleedge: ["9L46"],
 			gigaimpact: ["9L46"],
 			helpinghand: ["9L46"],
