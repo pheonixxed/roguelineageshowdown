@@ -100898,8 +100898,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dazzlinggleam: ["9L46"],
 			protect: ["9L46"],
 		    substitute: ["9L46"],
-			rest: ["9L46"],
-			sleeptalk: ["9L46"],
 		}
 	},
 	masterillusionist: {
@@ -100945,7 +100943,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psynoise: ["9L46"],
 			healingwish: ["9L46"],
 			swagger: ["9L46"],
-			protect: ["9L46"],
 		    substitute: ["9L46"],
 			rest: ["9L46"],
 			sleeptalk: ["9L46"],
