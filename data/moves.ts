@@ -21726,7 +21726,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { atk: 1 } },
 	},
     serpentstrike: {
-        num: 2507,
+        num: 2512,
         accuracy: 100,
         basePower: 80,
         category: "Physical",
@@ -21747,7 +21747,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         shortDesc: "20% chance to poison the target.",
     },
 	lightpiercer: {
-		num: 813,
+		num: 2513,
 		accuracy: 90,
 		basePower: 20,
 		basePowerCallback(pokemon, target, move) {
@@ -21765,4 +21765,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 120 },
 		maxMove: { basePower: 140 },
 	},
+	owlslash: {
+        num: 2514,
+        accuracy: 95,
+        basePower: 95,
+        category: "Physical",
+        isNonstandard: null,
+        name: "Owl Slash",
+        pp: 5,
+        priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1},
+
+		critRatio:2,
+
+        target: "normal",
+        type: "Flying",
+        desc: "High critical hit ratio. Slicing move.",
+        shortDesc: " High critical hit ratio.",
+    },
+
 };
