@@ -2,14 +2,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	// Changed Moves
 
 	// New Moves
-    furantur: {
+	 furantur: {
         num: 2499,
         accuracy: 100,
         basePower: 40,
         category: "Special",
         isNonstandard: null,
         name: "Furantur",
-        pp: 16,
+        pp: 10,
         priority: 0,
         flags: { protect: 1, mirror: 1, heal: 1,},
         drain: [1,2],
@@ -52,7 +52,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Physical",
         isNonstandard: null,
         name: "Rising Dragon",
-        pp: 8,
+        pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
         multihit: 3,
@@ -92,7 +92,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Physical",
         isNonstandard: null,
         name: "Lightning Elbow",
-        pp: 16,
+        pp: 10,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
         secondary: {
@@ -112,7 +112,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Special",
         isNonstandard: null,
         name: "Lightning Drop",
-        pp: 8,
+        pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1},
         secondary: {
@@ -132,7 +132,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 70,
 		category: "Physical",
 		name: "Charged Blow",
-		pp: 8,
+		pp: 5,
 		priority: 0,
 		flags: { contact:1, protect: 1, mirror: 1, metronome: 1, slicing: 1},
 /* 		onPrepareHit(target, source, move) {
@@ -184,7 +184,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Physical",
         isNonstandard: null,
         name: "Swallow Reversal",
-        pp: 16,
+        pp: 10,
         priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1 },
 
@@ -207,7 +207,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Physical",
         isNonstandard: null,
         name: "Wrathful Leap",
-        pp: 8,
+        pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1},
 		recoil: [1, 2],
@@ -224,7 +224,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Physical",
         isNonstandard: null,
         name: "Dark Charged Blow",
-        pp: 8,
+        pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1 },
         secondary: {
@@ -244,7 +244,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Special",
         isNonstandard: null,
         name: "Floresco",
-        pp: 8,
+        pp: 5,
         priority: 0,
 		flags: { protect: 1, mirror: 1, slicing: 1 },
         condition: {
@@ -322,7 +322,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Physical",
         isNonstandard: null,
         name: "Elegant Slash",
-        pp: 10,
+        pp: 5,
         priority: 0,
 		flags: { protect: 1, mirror: 1, slicing: 1 },
         multihit: 8,
@@ -340,7 +340,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         category: "Physical",
         isNonstandard: null,
         name: "Needle's Eye",
-        pp: 15,
+        pp: 10,
         priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1 },
         critRatio: 2,
@@ -416,13 +416,13 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		zMove: { boost: { atk: 1 } },
 	},
     serpentstrike: {
-        num: 2507,
+        num: 2512,
         accuracy: 100,
         basePower: 80,
         category: "Physical",
         isNonstandard: null,
         name: "Serpent Strike",
-        pp: 8,
+        pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
 
@@ -435,6 +435,43 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         type: "Poison",
         desc: "20% chance to poison the target.",
         shortDesc: "20% chance to poison the target.",
+    },
+	lightpiercer: {
+		num: 2513,
+		accuracy: 90,
+		basePower: 20,
+		basePowerCallback(pokemon, target, move) {
+			return 20 * move.hit;
+		},
+		category: "Physical",
+		name: "Light Piercer",
+		pp: 10,
+		priority: 0,
+		flags: { mirror: 1, metronome: 1 },
+		multihit: 3,
+		multiaccuracy: true,
+		target: "normal",
+		type: "Fairy",
+		zMove: { basePower: 120 },
+		maxMove: { basePower: 140 },
+	},
+	owlslash: {
+        num: 2514,
+        accuracy: 95,
+        basePower: 95,
+        category: "Physical",
+        isNonstandard: null,
+        name: "Owl Slash",
+        pp: 5,
+        priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1},
+
+		critRatio:2,
+
+        target: "normal",
+        type: "Flying",
+        desc: "High critical hit ratio. Slicing move.",
+        shortDesc: " High critical hit ratio.",
     },
 };
 /*     lightningelbow: {

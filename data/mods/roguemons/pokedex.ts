@@ -6,17 +6,19 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Necromancer",
 		types: ["Dark","Ghost"],
 		baseStats: { hp: 70, atk: 74, def: 96, spa: 115, spd: 118, spe: 52 },
+		tags: ["Ultra"],
 		abilities: { 0: "Cursed Body", 1:"Prankster"},
-		weightkg: 40, // placeholder
+		weightkg: 47, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	oni: {
 		num: 10000,
 		name: "Oni",
 		types: ["Fighting"],
-		baseStats: { hp: 95, atk: 120, def: 90, spa: 70, spd: 75, spe: 80 },
+		baseStats: { hp: 95, atk: 120, def: 90, spa: 65, spd: 75, spe: 85 },
+		tags: ["Ultra"],
 		abilities: { 0: "Iron Fist"},
-		weightkg: 60, // placeholder
+		weightkg: 97, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	dragonsage: {
@@ -24,8 +26,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Dragon Sage",
 		types: ["Dragon","Electric"],
 		baseStats: { hp: 70, atk: 115, def: 75, spa: 90, spd: 70, spe: 110 },
+		tags: ["Ultra"],
 		abilities: { 0: "Dragonize", 1: "Static"},
-		weightkg: 50, // placeholder
+		weightkg: 53, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	ronin: {
@@ -33,8 +36,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Ronin",
 		types: ["Water","Fairy"],
 		baseStats: { hp: 70, atk: 101, def: 70, spa: 106, spd: 65, spe: 111 },
+		tags: ["Ultra"],
 		abilities: { 0: "Quick Draw", 1: "Adaptability"},
-		weightkg: 40, // placeholder
+		weightkg: 45, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	abysswalker: {
@@ -42,17 +46,19 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Abysswalker",
 		types: ["Dark"],
 		baseStats: { hp: 110, atk: 140, def: 120, spa: 5, spd: 60, spe: 50 },
+		tags: ["Ultra"],
 		abilities: { 0: "Reckless"},
-		weightkg: 400, // placeholder
+		weightkg: 445, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	sigilknight: {
 		num: 10004,
 		name: "Sigil Knight",
 		types: ["Steel"],
-		baseStats: { hp: 100, atk: 110, def: 80, spa: 85, spd: 80, spe: 80 },
+		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
+		tags: ["Ultra"],
 		abilities: { 0: "Sharpness"},
-		weightkg: 200, // placeholder
+		weightkg: 302, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 		otherFormes: [
 			"Sigil Knight-Fire", "Sigil Knight-Ice", "Sigil Knight-Thunder", "Sigil Knight-White Flame"
@@ -66,10 +72,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Sigil Knight-Fire",
 		baseSpecies: "Sigil Knight",
 		types: ["Steel","Fire"],
-		baseStats: { hp: 100, atk: 110, def: 80, spa: 85, spd: 80, spe: 80 },
+		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
+		tags: ["Ultra"],
 		abilities: { 0: "Sharpness"},
 		requiredItem: "Fire Charge",
-		weightkg: 200, // placeholder
+		weightkg: 302, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Sigil Knight",
 	}, 
@@ -77,21 +84,23 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		num: 10006,
 		name: "Sigil Knight-Ice",
 		types: ["Steel","Ice"],
-		baseStats: { hp: 100, atk: 110, def: 80, spa: 85, spd: 80, spe: 80 },
+		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
+		tags: ["Ultra"],
 		abilities: { 0: "Sharpness"},
 		requiredItem: "Ice Charge",
-		weightkg: 200, // placeholder
+		weightkg: 302, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Sigil Knight",
 	}, 
 	sigilknightthunder: {
 		num: 10007,
 		name: "Sigil Knight-Thunder",
-		types: ["Steel","Thunder"],
-		baseStats: { hp: 100, atk: 110, def: 80, spa: 85, spd: 80, spe: 80 },
+		types: ["Steel","Electric"],
+		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
+		tags: ["Ultra"],
 		abilities: { 0: "Sharpness"},
 		requiredItem: "Thunder Charge",
-		weightkg: 200, // placeholder
+		weightkg: 302, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Sigil Knight",
 	}, 
@@ -99,10 +108,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		num: 10008,
 		name: "Sigil Knight-White Flame",
 		types: ["Steel","Fairy"],
-		baseStats: { hp: 100, atk: 110, def: 80, spa: 85, spd: 80, spe: 80 },
+		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
+		tags: ["Ultra"],
 		abilities: { 0: "Sharpness"},
 		requiredItem: "White Flame Charge",
-		weightkg: 200, // placeholder
+		weightkg: 302, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Sigil Knight",
 	}, 
@@ -110,9 +120,10 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		num: 10011,
 		name: "Wraith Knight",
 		types: ["Steel","Dark"],
-		baseStats: { hp: 125, atk: 100, def: 105, spa: 80, spd: 75, spe: 50 },
+		baseStats: { hp: 120, atk: 108, def: 100, spa: 97, spd: 60, spe: 50 },
+		tags: ["Ultra"],
 		abilities: { 0: "Sword of Ruin", 1: "Intimidate"},
-		weightkg: 250, // placeholder
+		weightkg: 325, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	druid: {
@@ -120,8 +131,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Druid",
 		types: ["Ground","Grass"],
 		baseStats: { hp: 115, atk: 52, def: 118, spa: 74, spd: 96, spe: 70 },
-		abilities: { 0: "Regenerator", 1: "Iron Barbs", H: "Grassy Surge"},
-		weightkg: 50, // placeholder
+		tags: ["Ultra"],
+		abilities: { 0: "Regenerator", H: "Grassy Surge"},
+		weightkg: 72, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	masterillusionist: {
@@ -129,8 +141,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Master Illusionist",
 		types: ["Psychic","Fairy"],
 		baseStats: { hp: 70, atk: 60, def: 75, spa: 130, spd: 110, spe: 80 },
+		tags: ["Ultra"],
 		abilities: { 0: "Psychic Surge"},
-		weightkg: 50, // placeholder
+		weightkg: 44, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	whisperer: {
@@ -138,8 +151,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Whisperer",
 		types: ["Normal","Ghost"],
 		baseStats: { hp: 60, atk: 110, def: 70, spa: 105, spd: 70, spe: 136 },
+		tags: ["Ultra"],
 		abilities: { 0: "Technician", 1:"Silverguard"},
-		weightkg: 40, // placeholder
+		weightkg: 5, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	cadence: {
@@ -147,8 +161,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Cadence",
 		types: ["Normal"],
 		baseStats: { hp: 106, atk: 60, def: 111, spa: 105, spd: 111, spe: 127 },
+		tags: ["Ultra"],
 		abilities: { 0: "Punk Rock", 1:"Silverguard", H:"Friend Guard"},
-		weightkg: 40, // placeholder
+		weightkg: 70, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	facelessone: {
@@ -156,6 +171,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Faceless One",
 		types: ["Ghost"],
 		baseStats: { hp: 55, atk: 125, def: 50, spa: 80, spd: 50, spe: 125 },
+		tags: ["Ultra"],
 		abilities: { 0: "Technician", 1:"Speed Boost"},
 		weightkg: 40, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
@@ -165,8 +181,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Shinobi",
 		types: ["Flying","Fighting"],
 		baseStats: { hp: 75, atk: 120, def: 80, spa: 80, spd: 80, spe: 110 },
+		tags: ["Ultra"],
 		abilities: { 0: "Gale Wings"},
-		weightkg: 40, // placeholder
+		weightkg: 84, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 	deepknight: {
@@ -174,8 +191,29 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Deep Knight",
 		types: ["Fairy","Poison"],
 		baseStats: { hp: 60, atk: 97, def: 113, spa: 97, spd: 113, spe: 65},
+		tags: ["Ultra"],
 		abilities: { 0: "Intimidate", 1:"Sticky Hold"},
-		weightkg: 280, // placeholder
+		weightkg: 291, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+	dragonslayer: {
+		num: 10019,
+		name: "Dragon Slayer",
+		types: ["Dragon","Steel"],
+		baseStats: { hp: 100, atk: 119, def: 86, spa: 70, spd: 79, spe: 91},
+		tags: ["Ultra"],
+		abilities: { 0: "Full Metal Body"},
+		weightkg: 156, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+	vanguard: {
+		num: 10020,
+		name: "Vanguard",
+		types: ["Fire","Fighting"],
+		baseStats: { hp: 85, atk: 125, def: 76, spa: 80, spd: 99, spe: 80},
+		tags: ["Ultra"],
+		abilities: { 0: "Blaze", 1:"Flame Body"},
+		weightkg: 187, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 
@@ -189,6 +227,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		abilities: { 0: "Imposter"},
 		weightkg: 1, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
+		tags: ["Ultra"],
 		otherFormes: [
 			"Greater-Navaran"
 		],
@@ -204,8 +243,22 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		abilities: { 0: "Trace"},
 		requiredItem: "Jack of Spades",
 		weightkg: 4, // placeholder
+		tags: ["Ultra"],
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Navaran",
+	}, 
+
+	// Monsters
+
+	sandserpent: {
+		num: 10200,
+		name: "Sand Serpent",
+		types: ["Ground","Dragon"],
+		baseStats: { hp: 92, atk: 123, def: 133, spa: 88, spd: 62, spe: 37},
+		tags: ["Ultra"],
+		abilities: { 0: "Sand Stream"},
+		weightkg: 600, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 };
 /* 	faerwork: {
