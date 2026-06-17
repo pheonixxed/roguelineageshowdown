@@ -5663,7 +5663,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	silverguard: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
-			if (move.flags['contact']) mod /= 3;
+			if (move.flags['contact']) mod /= 1.3;
 			return this.chainModify(mod);
 		},
 		flags: { breakable: 1 },

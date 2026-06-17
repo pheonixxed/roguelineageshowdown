@@ -21672,6 +21672,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priorityChargeCallback(source) {
 			source.addVolatile('chillyreception');
 		},
+
 		
 		selfSwitch: true,
 		condition: {
@@ -21680,7 +21681,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onBeforeMove(source, target, move) {
 				if (move.id !== 'So What') return;
 				this.add('-prepare', source, 'So What', '[premajor]');
-                this.field.setTerrain('mistyterrain');
+				this.field.setTerrain('mysticterrain');
 			},
 		},
 		target: "all",
