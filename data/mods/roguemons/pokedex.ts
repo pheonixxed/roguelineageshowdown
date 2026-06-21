@@ -67,15 +67,15 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 			"Sigil Knight", "Sigil Knight-Fire", "Sigil Knight-Ice", "Sigil Knight-Thunder", "Sigil Knight-White Flame"
 		],
 	}, 
-	sigilknightfire: {
+	sigilknightflame: {
 		num: 10005,
-		name: "Sigil Knight-Fire",
+		name: "Sigil Knight-Flame",
 		baseSpecies: "Sigil Knight",
 		types: ["Steel","Fire"],
 		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
 		tags: ["Ultra"],
 		abilities: { 0: "Sharpness"},
-		requiredItem: "Fire Charge",
+		requiredItem: "Flame Charge",
 		weightkg: 302, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Sigil Knight",
