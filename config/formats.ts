@@ -21,14 +21,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
-	{
-		section: "Rogue Lineage",
-	},
-	{
-		name: "[Gen 9] Rogue Lineage OU",
-		mod: 'roguemons',
-		ruleset: ['Standard Rogue Lineage'],
-		banlist: ['Greater-Navaran'],
-	},
+
 ];
 
