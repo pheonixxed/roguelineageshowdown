@@ -5669,7 +5669,39 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Silverguard",
 		isNonstandard: null,
-		rating: 3.5,
+		rating: 4,
 		num: 10002,
 	},
+	dragonblood: {
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['contact']) {
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		onHit(target, source, move) {
+			if (move.flags['contact']) {
+				this.damage(target.baseMaxhp / 10, target, target);
+			}
+		},
+		flags: {},
+		name: "Dragon Blood",
+		rating: 3.5,
+		num: 10003,
+	},
+	princesblessing: {
+		onModifyDefPriority: 5,
+		onModifySpDPriority: 6,
+		onModifyDef(def) {
+			return this.chainModify(1.3);
+		},
+		onModifySpD(spD) {
+			return this.chainModify(1.3);
+		},
+		flags: {},
+		name: "Prince's Blessing",
+		rating: 5,
+		num: 10004,
+	},
+
 };

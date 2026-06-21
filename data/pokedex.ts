@@ -21152,6 +21152,19 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 70, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
+	cadencefairfrozen: {
+		num: 10021,
+		name: "Cadence-Fairfrozen",
+		baseSpecies: "Cadence",
+		types: ["Normal","Ice"],
+		baseStats: { hp: 85, atk: 95, def: 89, spa: 126, spd: 101, spe: 124 },
+		tags: ["Ultra"],
+		abilities: { 0: "Snow Warning"},
+		requiredItem: "Fairfrozen",
+		weightkg: 70, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+		changesFrom: "cadence",
+	}, 
 	facelessone: {
 		num: 10016,
 		name: "Faceless One",
@@ -21178,7 +21191,19 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Fairy","Poison"],
 		baseStats: { hp: 60, atk: 97, def: 113, spa: 97, spd: 113, spe: 65},
 		tags: ["Ultra"],
-		abilities: { 0: "Intimidate", 1:"Sticky Hold"},
+		abilities: { 0: "Prince's Blessing", 1:"Sticky Hold"},
+		weightkg: 291, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+	deepknightfairfrozen: {
+		num: 10022,
+		name: "Deep Knight-Fairfrozen",
+		baseSpecies: "Deep Knight",
+		types: ["Poison","Ice"],
+		baseStats: { hp: 85, atk: 135, def: 85, spa: 75, spd: 85, spe: 80},
+		tags: ["Ultra"],
+		requiredItem: "Fairfrozen",
+		abilities: { 0: "Prince's Blessing"},
 		weightkg: 291, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
@@ -21188,7 +21213,19 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Dragon","Steel"],
 		baseStats: { hp: 100, atk: 119, def: 86, spa: 70, spd: 79, spe: 91},
 		tags: ["Ultra"],
-		abilities: { 0: "Full Metal Body"},
+		abilities: { 0: "Dragon Blood"},
+		weightkg: 156, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+	dragonslayerfairfrozen: {
+		num: 10023,
+		name: "Dragon Slayer-Fairfrozen",
+		baseSpecies: "Dragon Slayer",
+		types: ["Dragon","Ice"],
+		baseStats: { hp: 85, atk: 120, def: 80, spa: 80, spd: 80, spe: 100},
+		tags: ["Ultra"],
+		requiredItem: "Fairfrozen",
+		abilities: { 0: "Dragon Blood"},
 		weightkg: 156, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 

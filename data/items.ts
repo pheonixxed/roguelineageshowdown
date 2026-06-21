@@ -8280,4 +8280,24 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 1005,
 		gen: 9,
 	},
+	fairfrozen: {
+		name: "Fairfrozen",
+		spritenum: 552,
+
+		onBasePowerPriority: 14,
+		onBasePower(basePower, user, target, move) {
+			if ((user.baseSpecies.baseSpecies === 'Cadence' || user.baseSpecies.baseSpecies === 'Deep Knight' || user.baseSpecies.baseSpecies === 'Dragon Slayer') && (move.type === 'Ice')) {
+				return this.chainModify(1.2);
+			}
+		},
+		onTakeItem(item, source) {
+			if (source.baseSpecies.baseSpecies === 'Cadence' || source.baseSpecies.baseSpecies === 'Deep Knight' || source.baseSpecies.baseSpecies === 'Dragon Slayer') return false;
+			return false;
+		},
+
+
+		shortDesc: "When Held by: Dragon Slayer, Deepknight, Cadiance Ice-type attacks have 1.2x power.",
+		num: 1005,
+		gen: 9,
+	},
 };

@@ -21784,5 +21784,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         desc: "High critical hit ratio. Slicing move.",
         shortDesc: " High critical hit ratio.",
     },
+	subzerostrike: {
+        num: 2514,
+        accuracy: 100,
+        basePower: 100,
+        category: "Physical",
+        isNonstandard: null,
+        name: "Subzero Strike",
+        pp: 5,
+        priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1},
+
+        target: "normal",
+        type: "Ice",
+        desc: "No additional effect.",
+        shortDesc: " No additional effect.",
+    },
 
 };
