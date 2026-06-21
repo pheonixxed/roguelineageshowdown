@@ -7650,4 +7650,12 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+	furantur: {
+		name: "Furantur",
+        desc: "Causes damage to the target equal to 1/16 of its maximum HP (1/8 if the target is Steel or Water type), rounded down, at the end of each turn during effect. This effect ends when the target is no longer active. User recovers 50% of the damage dealt each turn.",
+        shortDesc: "Deals 1/16 max HP and drains 50% of that damage each turn; 1/8 on Ghost, Psychic.",
+
+		start: "  [POKEMON] is being drained by Furantur!",
+		damage: "  [POKEMON] is hurt by Furantur!",
+	},
 };

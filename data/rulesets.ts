@@ -45,7 +45,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		effectType: 'ValidatorRule',
 		name: 'Standard Rogue Lineage',
 		desc: "Exclusively Rogue Lineage Ultra and below Pokemon.",
-		ruleset: ['Team Preview', 'Species Clause','Terastal Clause','Cancel Mod'],
+		ruleset: ['Obtainable','Team Preview', 'Species Clause','Terastal Clause','Cancel Mod', 'HP Percentage Mod',],
 		banlist: ['All Pokemon'],
 		unbanlist: ['Ultra'],
 	},
