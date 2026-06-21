@@ -203,7 +203,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		num: 10018,
 		name: "Deep Knight",
 		types: ["Fairy","Poison"],
-		baseStats: { hp: 60, atk: 97, def: 113, spa: 97, spd: 113, spe: 65},
+		baseStats: { hp: 60, atk: 97, def: 93, spa: 107, spd: 113, spe: 65},
 		tags: ["Ultra"],
 		abilities: { 0: "Prince's Blessing", 1:"Sticky Hold"},
 		weightkg: 291, // placeholder
