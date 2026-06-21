@@ -2,43 +2,53 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	// Changed Moves
 
 	// New Moves
-	 furantur: {
+	furantur: {
         num: 2499,
         accuracy: 100,
-        basePower: 40,
+        basePower: 60,
         category: "Special",
         isNonstandard: null,
         name: "Furantur",
+        volatileStatus: 'furantur',
         pp: 10,
         priority: 0,
         flags: { protect: 1, mirror: 1, heal: 1,},
-        drain: [1,2],
-        onHit(target, source, move) {
-            target.addVolatile('furantur',source)
-        },
+		secondary: {
+			chance: 100,
+			volatileStatus: 'healblock',
+		},
         condition: {
             noCopy: true,
-            onStart(pokemon) {
-                this.add('-start', pokemon, 'Furantur');
-            },
-            onResidualOrder: 13,
-            onResidual(pokemon) {
-                this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Ghost', 'Psychic']) ? 8 : 16));
-                const source = pokemon.volatiles['furantur']?.source
-                source.heal(pokemon.baseMaxhp / (pokemon.hasType(['Ghost', 'Psychic']) ? 8 : 16))
-            },
 
-            onEnd(pokemon) {
-                this.add('-end', pokemon, 'Furantur');
+			onStart(target) {
+				this.add('-start', target, 'furantur');
+				this.add('-message', `${target.name} is being drained by Furantur!`);
+			},
+			onResidualOrder: 14,
+			onResidual(pokemon) {
+				const target = this.getAtSlot(pokemon.volatiles['furantur'].sourceSlot);
+				if (!target || target.fainted || target.hp <= 0) {
+					this.debug('Nothing to leech into');
+					return;
+				}
+				const damage = this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Ghost', 'Psychic']) ? 8 : 16));
+				if (damage) {
+					this.heal(damage, target, pokemon);
+				}
+			},
+			onEnd(pokemon) {
+                this.add('-end', pokemon, 'furantur');
             },
 
 
         },
+
         target: "normal",
         type: "Ghost",
         desc: "Causes damage to the target equal to 1/16 of its maximum HP (1/8 if the target is Steel or Water type), rounded down, at the end of each turn during effect. This effect ends when the target is no longer active. User recovers 50% of the damage dealt each turn.",
         shortDesc: "Deals 1/16 max HP and drains 50% of that damage each turn; 1/8 on Ghost, Psychic.",
     },
+
     risingdragon: {
         num: 2500,
         accuracy: 100,

@@ -21316,22 +21316,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	 furantur: {
         num: 2499,
         accuracy: 100,
-        basePower: 40,
+        basePower: 70,
         category: "Special",
         isNonstandard: null,
         name: "Furantur",
-		volatileStatus: 'furantur',
         pp: 10,
         priority: 0,
         flags: { protect: 1, mirror: 1, heal: 1,},
-        drain: [1,2],
+		secondary: {
+			chance: 100,
+			volatileStatus: 'healblock',
+		},
         condition: {
             noCopy: true,
 
 			onStart(target) {
-				this.add('-start', target, 'Furantur');
+				this.add('-start', target, 'furantur', '[of] ' + this.effectState.source);
+				this.add('-message', `${target.name} is being drained by Furantur!`);
 			},
-			onResidualOrder: 13,
+			onResidualOrder: 14,
 			onResidual(pokemon) {
 				const target = this.getAtSlot(pokemon.volatiles['furantur'].sourceSlot);
 				if (!target || target.fainted || target.hp <= 0) {
@@ -21344,7 +21347,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 			},
 			onEnd(pokemon) {
-                this.add('-end', pokemon, 'Furantur');
+                this.add('-end', pokemon, 'furantur');
             },
 
 
