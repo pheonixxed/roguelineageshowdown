@@ -5703,7 +5703,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 5,
 		num: 10004,
 	},
-	asonepinky: {
+	asoneprincepinky: {
 		onSwitchInPriority: -3,
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'As One');
