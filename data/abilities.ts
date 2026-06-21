@@ -5703,5 +5703,24 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 5,
 		num: 10004,
 	},
+	asonepinky: {
+		onSwitchInPriority: -3,
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'As One');
+			this.add('-ability', pokemon, 'Hospitality');
+
+			for (const ally of pokemon.adjacentAllies()) {
+				this.heal(ally.baseMaxhp / 4, ally, pokemon);
+			}
+		},
+		onModifyCritRatio(critRatio, source, target) {
+			if (target && ['psn', 'tox'].includes(target.status)) return 5;
+		},
+
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+		name: "As One (Prince Pinky)",
+		rating: 3.5,
+		num: 10005,
+	},
 
 };

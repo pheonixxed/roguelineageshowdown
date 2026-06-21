@@ -6355,4 +6355,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: null,
 		tier: "Ultra",
 	},
+	scroom: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	princepinky: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	metascroom: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
 };

@@ -2305,4 +2305,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	asonepinky: {
+		name: "As One (Prince Pinky)",
+		desc: "Combination of the Merciless and Hospitality Abilities.",
+		shortDesc: "Combination of the Merciless and Hospitality Abilities.",
+	},
 };

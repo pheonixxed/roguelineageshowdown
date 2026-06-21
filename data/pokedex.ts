@@ -21270,6 +21270,44 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Navaran",
 	}, 
+	scroom: {
+		num: 10102,
+		name: "Scroom",
+		types: ["Grass","Poison"],
+		baseStats: { hp: 95, atk: 89, def: 89, spa: 89, spd: 89, spe: 89 },
+		abilities: { 0: "Toxic Debris", 1: "Merciless"},
+		weightkg: 7, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+		tags: ["Ultra"],
+		otherFormes: ["Metascroom", "Prince Pinky"],
+		formeOrder: ["Scroom", "Metascroom", "Prince Pinky"],
+	},
+	metascroom: {
+		num: 10103,
+		name: "Metascroom",
+		types: ["Grass","Steel"],
+		baseStats: { hp: 100, atk: 89, def: 107, spa: 89, spd: 106, spe: 89 },
+		abilities: { 0: "Filter"},
+		weightkg: 90, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+		tags: ["Ultra"],
+		otherFormes: ["Scroom", "Prince Pinky"],
+		formeOrder: ["Scroom", "Metascroom", "Prince Pinky"],
+		
+	},
+	princepinky: {
+		num: 10104,
+		name: "Prince Pinky",
+		types: ["Grass","Fairy"],
+		baseStats: { hp: 105, atk: 119, def: 89, spa: 89, spd: 89, spe: 89 },
+		abilities: { 0: "As One (Prince Pinky)"},
+		weightkg: 30, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+		tags: ["Ultra"],
+		otherFormes: ["Scroom", "Metascroom"],
+		formeOrder: ["Scroom", "Metascroom", "Prince Pinky"],
+	},
+
 
 	// Monsters
 
