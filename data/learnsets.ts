@@ -101104,6 +101104,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			psychocut: ["9L1"],
 			shadowball: ["9L1"],
 			shadowclaw: ["9L1"],
+			shadowsneak: ["9L1"],
 			substitute: ["9L1"],
 			taunt: ["9L1"],
 			throatchop: ["9L1"],
@@ -101124,7 +101125,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			astonish: ["9L1"],
 			hex: ["9L1"],
 			lick: ["9L1"],
-			shadowforce: ["9L1"],
+			phantomforce: ["9L1"],
 		},
 	},
 	shinobi: {
