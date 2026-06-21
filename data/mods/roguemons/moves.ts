@@ -467,7 +467,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	owlslash: {
         num: 2514,
-        accuracy: 95,
+        accuracy: 100,
         basePower: 95,
         category: "Physical",
         isNonstandard: null,
