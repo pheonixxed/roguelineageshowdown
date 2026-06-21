@@ -21791,7 +21791,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         shortDesc: " High critical hit ratio.",
     },
 	subzerostrike: {
-        num: 2514,
+        num: 2515,
         accuracy: 100,
         basePower: 100,
         category: "Physical",
@@ -21803,6 +21803,31 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
         target: "normal",
         type: "Ice",
+        desc: "No additional effect.",
+        shortDesc: " No additional effect.",
+    },
+	thunderspearcrash: {
+        num: 2516,
+        accuracy: 90,
+        basePower: 110,
+        category: "Physical",
+        isNonstandard: null,
+        name: "Thunder Spear Crash",
+        pp: 5,
+        priority: 0,
+		flags: { protect: 1, mirror: 1},
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
+		},
+
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
+
+        target: "normal",
+        type: "Electric",
         desc: "No additional effect.",
         shortDesc: " No additional effect.",
     },
