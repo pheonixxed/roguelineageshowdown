@@ -294,7 +294,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			alluringvoice: ["9L1"],
 			calmmind: ["9L1"],
 			bulkup: ["9L1"],
-			sworddance: ["9L1"],
+			swordsdance: ["9L1"],
 			superpower: ["9L1"],
 			destinybond: ["9L1"],
 			drainingkiss: ["9L1"],
