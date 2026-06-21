@@ -5677,11 +5677,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['contact']) {
 				return this.chainModify([5325, 4096]);
+
 			}
 		},
-		onHit(target, source, move) {
-			if (move.flags['contact']) {
-				this.damage(target.baseMaxhp / 10, target, target);
+		onAfterMoveSecondarySelf(source, target, move) {
+			if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag) {
+				if (move.flags['contact']) {
+					this.damage(source.baseMaxhp / 10, source, source);
+				}
 			}
 		},
 		flags: {},
