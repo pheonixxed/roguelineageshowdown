@@ -21312,6 +21312,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	// Rogue Lineage Moves
+
 	 furantur: {
         num: 2499,
         accuracy: 100,
@@ -21328,22 +21329,29 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         },
         condition: {
             noCopy: true,
-            onStart(pokemon) {
-                this.add('-start', pokemon, 'Furantur');
-            },
-            onResidualOrder: 13,
-            onResidual(pokemon) {
-                this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Ghost', 'Psychic']) ? 8 : 16));
-                const source = pokemon.volatiles['furantur']?.source
-                source.heal(pokemon.baseMaxhp / (pokemon.hasType(['Ghost', 'Psychic']) ? 8 : 16))
-            },
 
-            onEnd(pokemon) {
+			onStart(target) {
+				this.add('-start', target, 'Furantur');
+			},
+			onResidualOrder: 13,
+			onResidual(pokemon) {
+				const target = this.getAtSlot(pokemon.volatiles['furantur'].sourceSlot);
+				if (!target || target.fainted || target.hp <= 0) {
+					this.debug('Nothing to leech into');
+					return;
+				}
+				const damage = this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Ghost', 'Psychic']) ? 8 : 16));
+				if (damage) {
+					this.heal(damage, target, pokemon);
+				}
+			},
+			onEnd(pokemon) {
                 this.add('-end', pokemon, 'Furantur');
             },
 
 
         },
+
         target: "normal",
         type: "Ghost",
         desc: "Causes damage to the target equal to 1/16 of its maximum HP (1/8 if the target is Steel or Water type), rounded down, at the end of each turn during effect. This effect ends when the target is no longer active. User recovers 50% of the damage dealt each turn.",
