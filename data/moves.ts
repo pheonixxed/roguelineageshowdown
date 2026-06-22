@@ -21323,10 +21323,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         pp: 10,
         priority: 0,
         flags: { protect: 1, mirror: 1, heal: 1,},
-		secondary: {
-			chance: 100,
-			volatileStatus: 'healblock',
-		},
         condition: {
             noCopy: true,
 
@@ -21355,8 +21351,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
         target: "normal",
         type: "Ghost",
-        desc: "Causes damage to the target equal to 1/16 of its maximum HP (1/8 if the target is Steel or Water type), rounded down, at the end of each turn during effect. This effect ends when the target is no longer active. User recovers 50% of the damage dealt each turn.",
-        shortDesc: "Deals 1/16 max HP and drains 50% of that damage each turn; 1/8 on Ghost, Psychic.",
+        desc: "Drains 1/16 max HP each turn; 1/8 on Ghost, Psychic.",
+        shortDesc: "Drains 1/16 max HP each turn; 1/8 on Ghost, Psychic.",
     },
     risingdragon: {
         num: 2500,

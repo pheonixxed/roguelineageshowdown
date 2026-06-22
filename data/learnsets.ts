@@ -101605,6 +101605,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rest: ["9L1"],
 			substitute: ["9L1"],
 			sleeptalk: ["9L1"],
+			synthesis: ["9L1"],
 		},
 	},
 	metascroom: {
@@ -101648,6 +101649,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rest: ["9L1"],
 			substitute: ["9L1"],
 			sleeptalk: ["9L1"],
+			synthesis: ["9L1"],
 		},
 	},
 	princepinky: {
@@ -101696,6 +101698,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rest: ["9L1"],
 			substitute: ["9L1"],
 			sleeptalk: ["9L1"],
+			synthesis: ["9L1"],
 		},
 	},
 };
