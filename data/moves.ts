@@ -21457,28 +21457,28 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		}, */
 		onModifyType(move, pokemon) {
 			switch (pokemon.species.name) {
-			case 'Sigil Knight - Fire':
+			case 'Sigil Knight-Fire':
 				move.type = 'Fire';
                 move.secondary = {
                     chance: 10,
 			        status: 'brn',
                 };
 				break;
-			case 'Sigil Knight - Ice':
+			case 'Sigil Knight-Ice':
 				move.type = 'Ice';
                 move.secondary = {
                     chance: 10,
 			        status: 'frz',
                 };
 				break;
-			case 'Sigil Knight - Thunder':
+			case 'Sigil Knight-Thunder':
 				move.type = 'Electric';
                 move.secondary = {
                     chance: 10,
 			        status: 'par',
                 };
 				break;
-            case 'Sigil Knight - White Flame':
+            case 'Sigil Knight-White Flame':
 				move.type = 'Fairy';
                 move.secondary = {
                     chance: 10,
