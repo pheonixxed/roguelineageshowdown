@@ -2335,4 +2335,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "Slicing moves do 0.75x damage and fire moves do 0.5x damage.",
 		shortDesc: "Slicing moves do 0.75x damage and fire moves do 0.5x damage.",
 	},
+	manageroftime: {
+		name: "Manager of Time",
+		desc: "50/50 chance to have +2 or -2 priority.",
+		shortDesc: "50/50 chance to have +2 or -2 priority.",
+	},
 };
