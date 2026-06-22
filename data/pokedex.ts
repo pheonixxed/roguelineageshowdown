@@ -21152,7 +21152,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 10015,
 		name: "Cadence",
 		types: ["Normal"],
-		baseStats: { hp: 106, atk: 60, def: 111, spa: 105, spd: 111, spe: 127 },
+		baseStats: { hp: 56, atk: 60, def: 111, spa: 105, spd: 111, spe: 127 },
 		tags: ["Ultra"],
 		abilities: { 0: "Punk Rock", 1:"Silverguard", H:"Friend Guard"},
 		weightkg: 70, // placeholder
