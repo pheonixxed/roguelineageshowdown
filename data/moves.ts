@@ -21837,8 +21837,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
 	pebblesniper: {
         num: 2517,
-        accuracy: 130,
-        basePower: 100,
+        accuracy: 100,
+        basePower: 130,
         category: "Special",
 		overrideDefensiveStat: 'spd',
         isNonstandard: null,
