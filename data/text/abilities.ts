@@ -2310,4 +2310,29 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "Combination of the Merciless and Hospitality Abilities.",
 		shortDesc: "Combination of the Merciless and Hospitality Abilities.",
 	},
+	silverguard: {
+		name: "Silverguard",
+		desc: "This Pokemon takes 1/3 damage from contact moves.",
+		shortDesc: "This Pokemon takes 1/3 damage from contact moves.",
+	},
+	princesblessing: {
+		name: "Prince's Blessing",
+		desc: "This Pokemon takes 30% less damage.",
+		shortDesc: "This Pokemon takes 30% less damage.",
+	},
+	dragonblood: {
+		name: "Dragon Blood",
+		desc: "This Pokemon's Contact moves power is multiplied by 1.3x but takes 1/10 in Recoil every time it uses a contact move.",
+		shortDesc: "Contact moves power multiplied by 1.3x but 1/10 Recoil every time it uses a contact move.",
+	},
+	coldblood: {
+		name: "Cold Blood",
+		desc: "The Pokémon takes no damage when hit by Fairy-type moves. Instead, its Speed stat is boosted.",
+		shortDesc: "Fairy type immunity, Speed is boosted by 1 stage when hit by fairy type moves.",
+	},
+	dragonscales: {
+		name: "Dragon Scales",
+		desc: "Slicing moves do 0.75x damage and fire moves do 0.5x damage.",
+		shortDesc: "Slicing moves do 0.75x damage and fire moves do 0.5x damage.",
+	},
 };

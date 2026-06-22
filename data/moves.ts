@@ -21633,6 +21633,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "self",
 		type: "Psychic",
+		shortDesc: "User protects, pokemon that make contact have their SpDef lowered by 1 stage.",
 	},
     elegantslash: {
         num: 2508,
@@ -21679,11 +21680,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {},
 		priorityChargeCallback(source) {
-			source.addVolatile('chillyreception');
+			source.addVolatile('sowhat');
 		},
-
-		
-		selfSwitch: true,
 		condition: {
 			duration: 1,
 			onBeforeMovePriority: 100,
@@ -21693,8 +21691,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.field.setTerrain('mysticterrain');
 			},
 		},
+		selfSwitch: true,
 		target: "all",
 		type: "Normal",
+
+		desc: "Sets Misty Terrain, User switches out.",
+        shortDesc: "Sets Misty Terrain, User switches out.",
 	},
     shadowfan: {
         num: 2510,
@@ -21716,6 +21718,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         target: "normal",
         type: "Ghost",
 
+		desc: "Hits 7 Times. 10% Poison Chance.",
         shortDesc: "Hits 7 Times. 10% Poison Chance.",
     }, 
     bane: {
@@ -21734,6 +21737,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "self",
 		type: "Dark",
 		zMove: { boost: { atk: 1 } },
+		desc: "Raises the user's speed and accuracy by 1.",
+        shortDesc: "Raises the user's speed and accuracy by 1.",
 	},
     serpentstrike: {
         num: 2512,
@@ -21774,10 +21779,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fairy",
 		zMove: { basePower: 120 },
 		maxMove: { basePower: 140 },
+		desc: "Hits 3 times. Each hit can miss, but power rises. Bypasses Protect.",
+        shortDesc: " Hits 3 times. Each hit can miss, but power rises. Bypasses Protect.",
 	},
 	owlslash: {
         num: 2514,
-        accuracy: 95,
+        accuracy: 100,
         basePower: 95,
         category: "Physical",
         isNonstandard: null,
@@ -21831,8 +21838,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
         target: "normal",
         type: "Electric",
-        desc: "No additional effect.",
-        shortDesc: " No additional effect.",
+        desc: "10% chance to paralyze the target. User is hurt by 50% of its max HP if it misses.",
+        shortDesc: "10% chance to paralyze the target. User is hurt by 50% of its max HP if it misses.",
     },
 
 };

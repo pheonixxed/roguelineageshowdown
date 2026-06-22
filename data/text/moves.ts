@@ -7658,4 +7658,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		start: "  [POKEMON] is being drained by Furantur!",
 		damage: "  [POKEMON] is hurt by Furantur!",
 	},
+	sowhat: {
+		name: "So What",
+		desc: "Sets Misty Terrain, User switches out.",
+		shortDesc: "Sets Misty Terrain, User switches out.",
+
+		prepare: "  [POKEMON] is preparing to play a relaxing tune!",
+	},
 };
