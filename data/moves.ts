@@ -21835,4 +21835,43 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         shortDesc: "10% chance to paralyze the target. User is hurt by 50% of its max HP if it misses.",
     },
 
+	pebblesniper: {
+        num: 2517,
+        accuracy: 130,
+        basePower: 100,
+        category: "Special",
+		overrideDefensiveStat: 'spd',
+        isNonstandard: null,
+        name: "Pebble Sniper",
+        pp: 3,
+        priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, cantusetwice: 1 },
+		critRatio: 2,
+
+		condition: {
+			onBeforeMovePriority: 101,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-activate', pokemon, 'move: Pebble Sniper');
+			},
+		},
+
+        target: "normal",
+        type: "Rock",
+        desc: "High Crit Ratio, Hits Def instead of SpD. Can't be used twice in a row.",
+        shortDesc: "High Crit Ratio, Hits Def instead of SpD. Can't be used twice in a row.",
+    },
+	fishermanstrap: {
+		num: 250,
+		accuracy: 90,
+		basePower: 40,
+		category: "Physical",
+		name: "Fisherman's Trap",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		volatileStatus: 'partiallytrapped',
+		target: "normal",
+		type: "Water",
+		contestType: "Beautiful",
+	},
 };

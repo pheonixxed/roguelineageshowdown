@@ -5725,5 +5725,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: 10005,
 	},
+	manageroftime: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (Math.floor(Math.random()) === 1) {
+				return priority + 2;
+			} else {
+				return priority - 2;
+			}
+
+		},
+		flags: {},
+		name: "Manager of Time",
+		rating: 1.5,
+		num: 10006,
+	},
 
 };

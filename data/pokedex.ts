@@ -21253,6 +21253,18 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 187, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
+	atlas: {
+		num: 10024,
+		name: "Atlas",
+		types: ["Water"],
+		baseStats: { hp: 57, atk: 76, def: 84, spa: 67, spd: 129, spe: 79},
+		tags: ["Ultra"],
+		abilities: { 0: "Water Bubble"},
+		weightkg: 40, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+
+
 
 	// Races
 
@@ -21321,6 +21333,26 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		otherFormes: ["Scroom", "Metascroom"],
 		formeOrder: ["Scroom", "Metascroom", "Prince Pinky"],
 	},
+	azael: {
+		num: 10105,
+		name: "Azael",
+		types: ["Fire","Dark"],
+		baseStats: { hp: 70, atk: 94, def: 72, spa: 96, spd: 89, spe: 100},
+		tags: ["Ultra"],
+		abilities: { 0: "Flash Fire", 1:"Drought"},
+		weightkg: 55, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+	fischeran: {
+		num: 10106,
+		name: "Fischeran",
+		types: ["Water","Flying"],
+		baseStats: { hp: 90, atk: 70, def: 87, spa: 109, spd: 89, spe: 75},
+		tags: ["Ultra"],
+		abilities: { 0: "Multiscale", 1:"Drizzle"},
+		weightkg: 40, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
 
 
 	// Monsters
@@ -21333,6 +21365,19 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		tags: ["Ultra"],
 		abilities: { 0: "Sand Stream"},
 		weightkg: 600, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
+
+	// NPCs
+
+	tal: {
+		num: 10300,
+		name: "Tal",
+		types: ["Psychic"],
+		baseStats: { hp: 70, atk: 72, def: 95, spa: 105, spd: 116, spe: 137},
+		tags: ["Ultra"],
+		abilities: { 0: "Manager of Time"},
+		weightkg: 49, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
 };

@@ -6367,4 +6367,20 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: null,
 		tier: "Ultra",
 	},
+	azael: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	atlas: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	fischeran: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
+	tal: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
 };

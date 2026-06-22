@@ -7665,4 +7665,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 
 		prepare: "  [POKEMON] is preparing to play a relaxing tune!",
 	},
+	pebblesniper: {
+		name: "Pebble Sniper",
+		desc: "High Crit Ratio, Hits Def instead of SpD. Can't be used twice in a row.",
+		shortDesc: "High Crit, Def instead of SpD. Can't be used twice in a row.",
+
+		activate: "I'm taking the shot Lannis.",
+	},
 };
