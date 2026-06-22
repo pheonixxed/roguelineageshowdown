@@ -2305,15 +2305,15 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
-	asonepinky: {
+	asoneprincepinky: {
 		name: "As One (Prince Pinky)",
 		desc: "Combination of the Merciless and Hospitality Abilities.",
 		shortDesc: "Combination of the Merciless and Hospitality Abilities.",
 	},
 	silverguard: {
 		name: "Silverguard",
-		desc: "This Pokemon takes 1/3 damage from contact moves.",
-		shortDesc: "This Pokemon takes 1/3 damage from contact moves.",
+		desc: "This Pokemon takes 30% less damage from contact moves.",
+		shortDesc: "This Pokemon takes 30% less damage from contact moves.",
 	},
 	princesblessing: {
 		name: "Prince's Blessing",
