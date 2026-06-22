@@ -21065,6 +21065,12 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 302, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 		changesFrom: "Sigil Knight",
+		otherFormes: [
+			"Sigil Knight-Fire", "Sigil Knight-Ice", "Sigil Knight-Thunder", "Sigil Knight-White Flame"
+		],
+		formeOrder: [
+			"Sigil Knight", "Sigil Knight-Fire", "Sigil Knight-Ice", "Sigil Knight-Thunder", "Sigil Knight-White Flame"
+		],
 	}, 
 	sigilknightice: {
 		num: 10006,
@@ -21151,6 +21157,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		abilities: { 0: "Punk Rock", 1:"Silverguard", H:"Friend Guard"},
 		weightkg: 70, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
+		otherFormes: ["Cadence-Fairfrozen"],
+		formeOrder: ["Cadence", "Cadence-Fairfrozen"],
 	}, 
 	cadencefairfrozen: {
 		num: 10021,
@@ -21163,7 +21171,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Fairfrozen",
 		weightkg: 70, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
-		changesFrom: "cadence",
+		changesFrom: "Cadence",
 	}, 
 	facelessone: {
 		num: 10016,
@@ -21194,6 +21202,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		abilities: { 0: "Prince's Blessing", 1:"Sticky Hold"},
 		weightkg: 291, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
+		otherFormes: ["Deep Knight-Fairfrozen"],
+		formeOrder: ["Deep Knight", "Deep Knight-Fairfrozen"],
 	}, 
 	deepknightfairfrozen: {
 		num: 10022,
@@ -21206,16 +21216,19 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		abilities: { 0: "Prince's Blessing"},
 		weightkg: 291, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
+		changesFrom: "Deep Knight",
 	}, 
 	dragonslayer: {
 		num: 10019,
 		name: "Dragon Slayer",
-		types: ["Dragon","Steel"],
+		types: ["Dragon","Flying"],
 		baseStats: { hp: 100, atk: 119, def: 86, spa: 70, spd: 79, spe: 91},
 		tags: ["Ultra"],
 		abilities: { 0: "Dragon Blood"},
 		weightkg: 156, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
+		otherFormes: ["Dragon Slayer-Fairfrozen"],
+		formeOrder: ["Dragon Slayer", "Dragon Slayer-Fairfrozen"],
 	}, 
 	dragonslayerfairfrozen: {
 		num: 10023,
@@ -21228,6 +21241,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		abilities: { 0: "Dragon Blood"},
 		weightkg: 156, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
+		changesFrom: "Dragon Slayer",
 	}, 
 	vanguard: {
 		num: 10020,
@@ -21274,7 +21288,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 10102,
 		name: "Scroom",
 		types: ["Grass","Poison"],
-		baseStats: { hp: 95, atk: 89, def: 89, spa: 89, spd: 89, spe: 89 },
+		baseStats: { hp: 96, atk: 89, def: 79, spa: 89, spd: 79, spe: 89 },
 		abilities: { 0: "Toxic Debris", 1: "Merciless"},
 		weightkg: 7, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
@@ -21286,7 +21300,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 10103,
 		name: "Metascroom",
 		types: ["Grass","Steel"],
-		baseStats: { hp: 100, atk: 89, def: 107, spa: 89, spd: 106, spe: 89 },
+		baseStats: { hp: 100, atk: 89, def: 107, spa: 62, spd: 106, spe: 87 },
 		abilities: { 0: "Filter"},
 		weightkg: 90, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder

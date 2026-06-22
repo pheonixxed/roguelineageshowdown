@@ -100506,6 +100506,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		    substitute: ["9L46"],
 			rest: ["9L46"],
 			sleeptalk: ["9L46"],
+			partingshot: ["9L46"],
 		}
 	},
 	oni: {
@@ -100575,6 +100576,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			substitute: ["9L46"],
 			protect: ["9L46"],
 			sleeptalk: ["9L46"],
+			earthquake: ["9L46"],
 		},
 	},
 	dragonsage: {
@@ -100781,6 +100783,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		    substitute: ["9L46"],
 			rest: ["9L46"],
 			sleeptalk: ["9L46"],
+			uturn: ["9L46"],
 		}
 	},
 	navaran: {
@@ -101041,7 +101044,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["9L46"],
 			healbell: ["9L46"],
 			wish: ["9L46"],
-			partingshot: ["9L46"],
 			iciclecrash: ["9L46"],
 			auroraveil: ["9L46"],
 			followme: ["9L46"],
@@ -101365,6 +101367,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragonclaw: ["9L1"],
 			dragonpulse: ["9L1"],
 			dragontail: ["9L1"],
+			dragondance: ["9L1"],
 			outrage: ["9L1"],
 			breakingswipe: ["9L1"],
 			dragonbreathe: ["9L1"],
@@ -101436,7 +101439,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["9L1"],
 			healbell: ["9L1"],
 			wish: ["9L1"],
-			partingshot: ["9L1"],
 			iciclecrash: ["9L1"],
 			auroraveil: ["9L1"],
 			followme: ["9L1"],
@@ -101545,6 +101547,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			dragonclaw: ["9L1"],
 			dragonpulse: ["9L1"],
 			dragontail: ["9L1"],
+			dragondance: ["9L1"],
 			outrage: ["9L1"],
 			breakingswipe: ["9L1"],
 			dragonbreathe: ["9L1"],
