@@ -21843,7 +21843,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		overrideDefensiveStat: 'spd',
         isNonstandard: null,
         name: "Pebble Sniper",
-        pp: 3,
+        pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, cantusetwice: 1 },
 		critRatio: 2,
