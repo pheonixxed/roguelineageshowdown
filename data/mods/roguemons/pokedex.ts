@@ -1,7 +1,7 @@
 export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable = {
 	//[NOTE] not necessary for server sided validation, pokemons are validated based on the Ultra tag, and their ../format-data tier
 	// Ultra Classes
-	necromancer: {
+/* 	necromancer: {
 		num: 9999,
 		name: "Necromancer",
 		types: ["Dark","Ghost"],
@@ -334,7 +334,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		abilities: { 0: "Sand Stream"},
 		weightkg: 600, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
-	}, 
+	},  */
 };
 /* 	faerwork: {
 		num: 2012,

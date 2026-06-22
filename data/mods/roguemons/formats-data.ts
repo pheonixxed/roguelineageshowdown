@@ -86,7 +86,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: null,
 		tier: "Ultra",
 	},
-	sandserpent: {
+	sanddragon: {
 		isNonstandard: null,
 		tier: "Ultra",
 	},

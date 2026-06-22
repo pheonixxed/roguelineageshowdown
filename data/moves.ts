@@ -21696,8 +21696,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
     shadowfan: {
         num: 2510,
-        accuracy: 90,
-        basePower: 10,
+        accuracy: 100,
+        basePower: 95,
         category: "Physical",
         isNonstandard: null,
         name: "Shadow Fan",
@@ -21705,17 +21705,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         priority: 0,
 		flags: { protect: 1, mirror: 1},
         secondary: {
-            chance: 10,
+            chance: 30,
             status: "psn",
         },
-        multihit: 7,
-        multiaccuracy: true,
 
         target: "normal",
         type: "Ghost",
 
-		desc: "Hits 7 Times. 10% Poison Chance.",
-        shortDesc: "Hits 7 Times. 10% Poison Chance.",
+        shortDesc: "30% Poison Chance.",
     }, 
     bane: {
 		num: 2511,

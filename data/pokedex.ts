@@ -21325,10 +21325,10 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 
 	// Monsters
 
-	sandserpent: {
+	sanddragon: {
 		num: 10200,
-		name: "Sand Serpent",
-		types: ["Ground","Dragon"],
+		name: "Sand Dragon",
+		types: ["Dragon","Ground"],
 		baseStats: { hp: 92, atk: 123, def: 133, spa: 88, spd: 62, spe: 37},
 		tags: ["Ultra"],
 		abilities: { 0: "Sand Stream"},

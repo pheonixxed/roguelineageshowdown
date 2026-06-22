@@ -6339,7 +6339,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: null,
 		tier: "Ultra",
 	},
-	sandserpent: {
+	sanddragon: {
 		isNonstandard: null,
 		tier: "Ultra",
 	},
