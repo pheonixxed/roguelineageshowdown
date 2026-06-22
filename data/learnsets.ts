@@ -100659,6 +100659,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			calmmind: ["9L46"],
 			focusblast: ["9L46"],
 			hydropump: ["9L46"],
+			playrough: ["9L46"],
 			surf: ["9L46"],
 			liquidation: ["9L46"],
 			waterfall: ["9L46"],
