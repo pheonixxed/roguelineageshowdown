@@ -5727,7 +5727,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	manageroftime: {
 		onModifyPriority(priority, pokemon, target, move) {
-			if (Math.floor(Math.random()) === 1) {
+			if (Math.round(Math.random()) === 1) {
 				return priority + 2;
 			} else {
 				return priority - 2;
