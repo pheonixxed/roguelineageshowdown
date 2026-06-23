@@ -21345,9 +21345,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onEnd(pokemon) {
                 this.add('-end', pokemon, 'furantur');
             },
-
+			onBeforeMovePriority: 9,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Bitter Malice', target);
+			},
 
         },
+
 
         target: "normal",
         type: "Ghost",
@@ -21393,7 +21397,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (!applies) return false;
 				this.add('-start', pokemon, 'Smack Down');
 			},
-        },
+			onBeforeMovePriority: 9,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Sky Uppercut', target);
+			},
+		},
 
         target: "normal",
         type: "Fighting",
@@ -21414,6 +21422,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 10,
 			status: 'par',
 		},
+		condition: {
+			onBeforeMovePriority: 15,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Plasma Fists', target);
+			}
+		},
 
         target: "normal",
         type: "Electric",
@@ -21431,7 +21445,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1},
         secondary: {
-			chance: 20,
+			chance: 20,	
 			status: 'par',
 		},
 
@@ -21455,6 +21469,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.attrLastMove('[anim] Ivy Cudgel ' + move.type);
 			}
 		}, */
+
+		condition: {
+			onBeforeMovePriority: 9,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Smart Strike', target);
+			}
+		},
 		onModifyType(move, pokemon) {
 			switch (pokemon.species.name) {
 			case 'Sigil Knight-Fire':
@@ -21509,6 +21530,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return this.chainModify(1.5);
 			}
 		},
+		condition: {
+			onBeforeMovePriority: 14,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Petal Dance', target);
+			}
+		},
 
         target: "normal",
         type: "Fairy",
@@ -21526,6 +21553,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1},
 		recoil: [1, 2],
+		condition: {
+			onBeforeMovePriority: 14,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Hyperspace Fury', target);
+			}
+		},
 
         target: "normal",
         type: "Dark",
@@ -21545,6 +21578,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         secondary: {
 			chance: 20,
 			status: 'brn',
+		},
+		condition: {
+			onBeforeMovePriority: 13,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Fiery Wrath', target);
+			}
 		},
 
         target: "normal",
@@ -21568,6 +21607,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
                     return null;
                 }
             },
+			onBeforeMovePriority: 12,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Vine Whip', target);
+			}
         },
         secondary: {
 			chance: 40,
@@ -21643,6 +21686,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, slicing: 1 },
         multihit: 8,
         multiaccuracy: true,
+		condition: {
+			onBeforeMovePriority: 10,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Tachyon Cutter', target);
+			}
+		},
 
         target: "normal",
         type: "Normal",
@@ -21660,6 +21709,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1 },
         critRatio: 2,
+		condition: {
+			onBeforeMovePriority: 9,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Chip Away', target);
+			}
+		},
 
         target: "normal",
         type: "Normal",
@@ -21708,6 +21763,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
             chance: 30,
             status: "psn",
         },
+		condition: {
+			onBeforeMovePriority: 9,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Spectral Thief', target);
+			}
+		},
 
         target: "normal",
         type: "Ghost",
@@ -21748,11 +21809,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 20,
 			status: 'psn',
 		},
+		condition: {
+			onBeforeMovePriority: 8,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Poison Jab', target);
+			}
+		},
 
         target: "normal",
         type: "Poison",
         desc: "20% chance to poison the target.",
         shortDesc: "20% chance to poison the target.",
+
     },
 	lightpiercer: {
 		num: 2513,
@@ -21760,6 +21828,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 20,
 		basePowerCallback(pokemon, target, move) {
 			return 20 * move.hit;
+		},
+		condition: {
+			onBeforeMovePriority: 5,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Dazzling Gleam', target);
+			}
 		},
 		category: "Physical",
 		name: "Light Piercer",
@@ -21785,6 +21859,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1},
+		condition: {
+			onBeforeMovePriority: 6,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Air Cutter', target);
+			}
+		},
 
 		critRatio:2,
 
@@ -21803,6 +21883,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1},
+		condition: {
+			onBeforeMovePriority: 4,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Ice Shard', target);
+			}
+		},
 
         target: "normal",
         type: "Ice",
@@ -21822,6 +21908,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		hasCrashDamage: true,
 		onMoveFail(target, source, move) {
 			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
+			
+		},
+		condition: {
+			onBeforeMovePriority: 4,
+			onBeforeMove(pokemon, target, move) {
+				this.add('-anim', pokemon, 'Electro Drift', target);
+			}
 		},
 
 		secondary: {
@@ -21845,13 +21938,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         name: "Pebble Sniper",
         pp: 5,
         priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, cantusetwice: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, cantusetwice: 1 , bullet: 1 },
 		critRatio: 2,
 
 		condition: {
 			onBeforeMovePriority: 101,
 			onBeforeMove(pokemon, target, move) {
 				this.add('-activate', pokemon, 'move: Pebble Sniper');
+				this.add('-anim', pokemon, 'Rock Blast', target);
 			},
 		},
 

@@ -101859,6 +101859,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			sandtomb: ["9L1"],
 			shoreup: ["9L1"],
 			spikes: ["9L1"],
+			skillswap: ["9L1"],
+			psyshock: ["9L1"],
 			stompingtantrum: ["9L1"],
 			stealthrock: ["9L1"],
 			geargrind: ["9L1"],
