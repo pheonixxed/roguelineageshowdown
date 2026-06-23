@@ -2,7 +2,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	// Changed Moves
 
 	// New Moves
-	furantur: {
+/* 	furantur: {
         num: 2499,
         accuracy: 100,
         basePower: 60,
@@ -141,12 +141,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		name: "Charged Blow",
 		pp: 5,
 		priority: 0,
-		flags: { contact:1, protect: 1, mirror: 1, metronome: 1, slicing: 1},
-/* 		onPrepareHit(target, source, move) {
+		flags: { contact:1, protect: 1, mirror: 1, metronome: 1, slicing: 1},		onPrepareHit(target, source, move) {
 			if (move.type !== "Steel") {
 				this.attrLastMove('[anim] Ivy Cudgel ' + move.type);
 			}
-		}, */
+		}, 
 		onModifyType(move, pokemon) {
 			switch (pokemon.species.name) {
 			case 'Sigil Knight-Fire':
@@ -195,12 +194,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1 },
 
-		onBasePower(basePower, source) {
-			if (source.statsLoweredThisTurn) {
-				this.debug('swallow buff');
-				return this.chainModify(1.5);
-			}
-		},
 
         target: "normal",
         type: "Fairy",
@@ -303,7 +296,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 				const lockedmove = source.getVolatile('lockedmove');
 				if (lockedmove) {
-					// Outrage counter is reset
 					if (source.volatiles['lockedmove'].duration === 2) {
 						delete source.volatiles['lockedmove'];
 					}
@@ -477,7 +469,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         type: "Flying",
         desc: "High critical hit ratio. Slicing move.",
         shortDesc: " High critical hit ratio.",
-    },
+    }, */
 };
 /*     lightningelbow: {
         num: 2501,

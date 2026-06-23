@@ -21524,12 +21524,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, slicing: 1 },
 
-		onBasePower(basePower, source) {
-			if (source.statsLoweredThisTurn) {
-				this.debug('swallow buff');
-				return this.chainModify(1.5);
-			}
-		},
 		condition: {
 			onBeforeMovePriority: 14,
 			onBeforeMove(pokemon, target, move) {
@@ -21539,8 +21533,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
         target: "normal",
         type: "Fairy",
-        desc: "Usually goes first. If a stat is lowered this turn, 1.5x Power.",
-        shortDesc: "Usually goes first. If a stat is lowered, 1.5x Power.",
+        desc: "Usually goes first.",
+        shortDesc: "Usually goes first.",
     },
     wrathfulleap: {
         num: 2504,

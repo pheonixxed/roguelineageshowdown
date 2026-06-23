@@ -100758,7 +100758,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			destinybond: ["9L46"],
 			drainingkiss: ["9L46"],
 			earthquake: ["9L46"],
-			bulletpunch: ["9L46"],
 			lightscreen: ["9L46"],
 			reflect: ["9L46"],
 			magiccoat: ["9L46"],
