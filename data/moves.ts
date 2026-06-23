@@ -21939,7 +21939,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         pp: 5,
         priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, cantusetwice: 1 , bullet: 1 },
-		critRatio: 2,
 
 		condition: {
 			onBeforeMovePriority: 101,
@@ -21951,8 +21950,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
         target: "normal",
         type: "Rock",
-        desc: "High Crit Ratio, Hits Def instead of SpD. Can't be used twice in a row.",
-        shortDesc: "High Crit Ratio, Hits Def instead of SpD. Can't be used twice in a row.",
+        desc: "Hits Def instead of SpD. Can't be used twice in a row.",
+        shortDesc: "Hits Def instead of SpD. Can't be used twice in a row.",
     },
 	fishermanstrap: {
 		num: 250,

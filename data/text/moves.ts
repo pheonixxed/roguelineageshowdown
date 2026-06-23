@@ -7667,8 +7667,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	pebblesniper: {
 		name: "Pebble Sniper",
-		desc: "High Crit Ratio, Hits Def instead of SpD. Can't be used twice in a row.",
-		shortDesc: "High Crit, Def instead of SpD. Can't be used twice in a row.",
+		desc: "Hits Def instead of SpD. Can't be used twice in a row.",
+		shortDesc: "Hits Def instead of SpD. Can't be used twice in a row.",
 
 		activate: "I'm taking the shot Lannis.",
 	},
