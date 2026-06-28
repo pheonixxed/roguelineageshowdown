@@ -21614,7 +21614,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         target: "normal",
         type: "Grass",
         desc: "40% chance to poison the target. Can only hit grounded targets.",
-        shortDesc: "40% chance to poison the target. Can only hit grounded targets.",
+        shortDesc: "40% psn. Can only hit grounded targets.",
     },
     globus: {
 		num: 2508,
@@ -21666,7 +21666,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "self",
 		type: "Psychic",
-		shortDesc: "User protects, pokemon that make contact have their SpDef lowered by 1 stage.",
+		shortDesc: "User protects, contact: -1 SpD.",
 	},
     elegantslash: {
         num: 2508,
@@ -21727,15 +21727,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priorityChargeCallback(source) {
 			source.addVolatile('sowhat');
 		},
+		
 		condition: {
-			duration: 1,
-			onBeforeMovePriority: 100,
-			onBeforeMove(source, target, move) {
-				if (move.id !== 'So What') return;
-				this.add('-prepare', source, 'So What', '[premajor]');
-				this.field.setTerrain('mysticterrain');
+			onStart(source) {
+				this.field.setTerrain('mistyterrain');
+				this.add('-prepare', source, 'move: So What', '[premajor]');
 			},
 		},
+		
 		selfSwitch: true,
 		target: "all",
 		type: "Normal",

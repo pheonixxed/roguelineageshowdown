@@ -101668,6 +101668,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			leechseed: ["9L1"],
 			toxic: ["9L1"],
 			spore: ["9L1"],
+			reflect: ["9L1"],
+			lightscreen: ["9L1"],
 			ingrain: ["9L1"],
 			banefulbunker: ["9L1"],
 			powerwhip: ["9L1"],
