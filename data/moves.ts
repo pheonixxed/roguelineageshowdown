@@ -21729,9 +21729,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		
 		condition: {
-			onStart(source) {
-				this.field.setTerrain('mistyterrain');
+			onBeforeSwitchOut(source) {
 				this.add('-prepare', source, 'move: So What', '[premajor]');
+				this.field.setTerrain('mistyterrain');
 			},
 		},
 		
