@@ -21596,16 +21596,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
         priority: 0,
 		flags: { protect: 1, mirror: 1, slicing: 1 },
         condition: {
-			onTryHit(target, source, move) {
-                if (!target.isGrounded) {
-                    return null;
-                }
-            },
 			onBeforeMovePriority: 12,
 			onBeforeMove(pokemon, target, move) {
 				this.add('-anim', pokemon, 'Vine Whip', target);
 			}
         },
+		onTryImmunity(target) {
+			return !target.isGrounded;
+		},
         secondary: {
 			chance: 40,
 			status: 'psn',

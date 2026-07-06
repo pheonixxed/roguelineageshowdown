@@ -101715,6 +101715,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			razorshell: ["9L1"],
 			scald: ["9L1"],
 			snipeshot: ["9L1"],
+			brickbreak: ["9L1"],
+			superpower: ["9L1"],
 			sparklingaria: ["9L1"],
 			surf: ["9L1"],
 			tripledive: ["9L1"],
