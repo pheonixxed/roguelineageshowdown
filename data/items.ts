@@ -8172,13 +8172,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onTakeItem(item, source) {
@@ -8187,7 +8187,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		forcedForme: "Sigil Knight-Flame",
 		itemUser: ["Sigil Knight-Flame"],
-		shortDesc: "Sigil Knight-Flame: 1.1x fire & steel attack.",
+		shortDesc: "Sigil Knight-Flame: 1.2x fire & steel attack.",
 		num: 1001,
 		gen: 9,
 	},
@@ -8197,13 +8197,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onTakeItem(item, source) {
@@ -8212,7 +8212,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		forcedForme: "Sigil Knight-Ice",
 		itemUser: ["Sigil Knight-Ice"],
-		shortDesc: "Sigil Knight-Ice: 1.1x ice & steel attack.",
+		shortDesc: "Sigil Knight-Ice: 1.2x ice & steel attack.",
 		num: 1002,
 		gen: 9,
 	},
@@ -8222,13 +8222,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onTakeItem(item, source) {
@@ -8237,7 +8237,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		forcedForme: "Sigil Knight-Thunder",
 		itemUser: ["Sigil Knight-Thunder"],
-		shortDesc: "Sigil Knight-Thunder: 1.1x electric & steel attack.",
+		shortDesc: "Sigil Knight-Thunder: 1.2x electric & steel attack.",
 		num: 1003,
 		gen: 9,
 	},
@@ -8247,13 +8247,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (attacker.types.includes(move.type)) {
-				return this.chainModify(1.1);
+				return this.chainModify(1.2);
 			}
 		},
 		onTakeItem(item, source) {
@@ -8262,7 +8262,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		forcedForme: "Sigil Knight-White Flame",
 		itemUser: ["Sigil Knight-White Flame"],
-		shortDesc: "Sigil Knight-White Flame: 1.1x fairy & steel attack.",
+		shortDesc: "Sigil Knight-White Flame: 1.2x fairy & steel attack.",
 		num: 1004,
 		gen: 9,
 	},

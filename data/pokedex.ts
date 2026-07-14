@@ -21075,6 +21075,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sigilknightice: {
 		num: 10006,
 		name: "Sigil Knight-Ice",
+		baseSpecies: "Sigil Knight",
 		types: ["Steel","Ice"],
 		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
 		tags: ["Ultra"],
@@ -21087,6 +21088,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sigilknightthunder: {
 		num: 10007,
 		name: "Sigil Knight-Thunder",
+		baseSpecies: "Sigil Knight",
 		types: ["Steel","Electric"],
 		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
 		tags: ["Ultra"],
@@ -21099,6 +21101,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sigilknightwhiteflame: {
 		num: 10008,
 		name: "Sigil Knight-White Flame",
+		baseSpecies: "Sigil Knight",
 		types: ["Steel","Fairy"],
 		baseStats: { hp: 100, atk: 110, def: 84, spa: 79, spd: 82, spe: 80 },
 		tags: ["Ultra"],

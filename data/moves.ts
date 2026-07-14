@@ -21601,8 +21601,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-anim', pokemon, 'Vine Whip', target);
 			}
         },
-		onTryImmunity(target) {
-			return !target.isGrounded;
+		onEffectiveness(typeMod, target, type) {
+			if (!target?.isGrounded) return 3;
 		},
         secondary: {
 			chance: 40,
