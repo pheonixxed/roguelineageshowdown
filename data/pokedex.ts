@@ -21266,6 +21266,16 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 40, // placeholder
 		eggGroups: ["Undiscovered"], // placeholder
 	}, 
+	lapidarist: {
+		num: 10025,
+		name: "Lapidarist",
+		types: ["Steel","Rock"],
+		baseStats: { hp: 150, atk: 99, def: 115, spa: 45, spd: 85, spe: 51},
+		tags: ["Ultra"],
+		abilities: { 0: "Silverguard"},
+		weightkg: 400, // placeholder
+		eggGroups: ["Undiscovered"], // placeholder
+	}, 
 
 
 

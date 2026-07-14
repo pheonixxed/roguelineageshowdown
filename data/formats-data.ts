@@ -6383,4 +6383,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: null,
 		tier: "Ultra",
 	},
+	lapidarist: {
+		isNonstandard: null,
+		tier: "Ultra",
+	},
 };
